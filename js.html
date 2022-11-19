@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <p>JavaScript Method Example</p>
+        <p>A method is a function stored as a property value.</p>
+
+        <p id="example"></p>
+
+        <script>
+            var thing = {
+                Country:"Ireland", 
+                location:"North Atlantic", type:"island", 
+                language:"Gaelic",
+                sentence : function (){
+                    return this.Country + " is an " + this.type;
+                }
+               };
+
+            document.getElementById("example").innerHTML = thing.sentence();
+        </script>
+
+    </body>
+</html>
